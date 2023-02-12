@@ -6,7 +6,7 @@ app = Flask(__name__,template_folder="docs")
 
 @app.route("/")
 def index():
-    return render_template("ai_1.html")
+    return render_template("index.html")
 
 
 
