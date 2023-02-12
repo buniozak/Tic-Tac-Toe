@@ -1,0 +1,14 @@
+from flask import Flask, render_template, request
+
+app = Flask(__name__,template_folder="docs")
+
+
+
+@app.route("/")
+def index():
+    return render_template("ai_1.html")
+
+
+
+if __name__ == "__main__":
+    app.run()
